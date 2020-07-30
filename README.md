@@ -1,8 +1,5 @@
-# AccessPCShareFile
-工程是依赖jcifs，Android下访问局域网PC上的共享文件,将jcifs.jar包添加到工程目录里，即可使用。
-jcifs开源项目，官网：https://jcifs.samba.org
-
-jcifs是samba组织下开发的一套兼容SMB协议的library，我们可以用它来在java里访问Windows共享文件；
-通过该jar里的方法能够获取局域网内的windowsPC的名称、共享文件夹和文件;
-手机和苹果的设备不能获取，因为该类使用的是IBM早期的NETBIOS协议，无法读取现有设备上的数值。
-
+# smb 协议数据 局域网数据共享
+## Android 与 pc互联网数据同步,实现了对pc共享文件夹文件的增删改查, 苹果的设备应该不能获取，因为该类使用的是IBM早期的NETBIOS协议，无法读取现有设备上的数值。
+****
+### 基于'jcifs', version: '2.1.19'  
+### 其中删除文件的,win10 有时需要管理员权限,我pc端应该是哪里没有设置好
